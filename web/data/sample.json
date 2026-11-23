@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nom": "Louise Michel",
+    "titre": "Louise Michel",
+    "texte": "EXEMPLE DE RETRANSCRIPTION (données de développement)",
+    "adresse": "EXEMPLE D'ADRESSE, 75018",
+    "lat": 48.8866,
+    "lon": 2.3431,
+    "categorie": "les écrivains et intellectuels",
+    "lien": "https://fr.wikipedia.org/wiki/Louise_Michel",
+    "lienType": "wikipedia"
+  },
+  {
+    "id": 2,
+    "nom": "Victor Hugo",
+    "titre": "Victor Hugo",
+    "texte": "EXEMPLE DE RETRANSCRIPTION (données de développement)",
+    "adresse": "EXEMPLE D'ADRESSE, 75004",
+    "lat": 48.8556,
+    "lon": 2.3596,
+    "categorie": "les écrivains et intellectuels",
+    "lien": "https://fr.wikipedia.org/wiki/Victor_Hugo",
+    "lienType": "wikipedia"
+  },
+  {
+    "id": 3,
+    "nom": "Marie Curie",
+    "titre": "Marie Curie",
+    "texte": "EXEMPLE DE RETRANSCRIPTION (données de développement)",
+    "adresse": "EXEMPLE D'ADRESSE, 75005",
+    "lat": 48.8427,
+    "lon": 2.3468,
+    "categorie": "les scientifiques",
+    "lien": "https://fr.wikipedia.org/wiki/Marie_Curie",
+    "lienType": "wikipedia"
+  },
+  {
+    "id": 4,
+    "nom": "Jean Moulin",
+    "titre": "Jean Moulin",
+    "texte": "EXEMPLE DE RETRANSCRIPTION (données de développement)",
+    "adresse": "EXEMPLE D'ADRESSE, 75015",
+    "lat": 48.8421,
+    "lon": 2.3114,
+    "categorie": "les résistants",
+    "lien": "https://fr.wikipedia.org/w/index.php?search=Jean+Moulin",
+    "lienType": "recherche"
+  },
+  {
+    "id": 5,
+    "nom": "Robert Garric",
+    "titre": "Robert Garric",
+    "texte": "ROBERT GARRIC/FONDATEUR (données de développement)",
+    "adresse": "28 AVENUE BOSQUET, 75007",
+    "lat": 48.857492,
+    "lon": 2.303494,
+    "categorie": "les écrivains et intellectuels",
+    "lien": "https://fr.wikipedia.org/wiki/Robert_Garric",
+    "lienType": "wikipedia"
+  }
+]

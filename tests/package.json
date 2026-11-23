@@ -1,0 +1,16 @@
+{
+  "name": "plaques-paris-tests",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tests QA : validation des données (node) et tests navigateur Playwright (iPhone 13)",
+  "scripts": {
+    "validate": "node validate-data.mjs",
+    "test": "node validate-data.mjs && playwright test",
+    "test:e2e": "playwright test",
+    "install:browsers": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.1"
+  }
+}

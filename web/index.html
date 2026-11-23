@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Carte des plaques commémoratives de Paris.">
+  <title>Plaques de Paris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="map" data-testid="map" aria-label="Carte des plaques commémoratives"></main>
+
+  <header class="topbar">
+    <div class="search-row">
+      <label class="visually-hidden" for="search">Rechercher une plaque par nom</label>
+      <input id="search" data-testid="search" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Rechercher un nom…" disabled>
+      <button id="locate" data-testid="locate" type="button" class="icon-btn" aria-label="Me localiser" disabled>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <ul id="search-results" data-testid="search-results" class="results" hidden></ul>
+  </header>
+
+  <div id="config-error" data-testid="config-error" class="notice" role="alert" hidden>
+    <strong>Carte indisponible</strong>
+    <p id="config-error-message">La clé Google Maps est absente. Renseignez <code>GOOGLE_MAPS_API_KEY</code> dans <code>web/config.js</code>, puis rechargez la page.</p>
+  </div>
+
+  <p id="status" data-testid="status" class="status" aria-live="polite">Chargement des plaques…</p>
+
+  <div id="toast" data-testid="toast" class="toast" role="status" hidden></div>
+
+  <section id="info-panel" data-testid="info-panel" class="info-panel" aria-labelledby="info-name" aria-hidden="true">
+    <div class="info-handle" aria-hidden="true"></div>
+    <button id="info-close" data-testid="info-close" type="button" class="close-btn" aria-label="Fermer">&times;</button>
+    <h2 id="info-name" data-testid="info-name"></h2>
+    <p id="info-categorie" data-testid="info-categorie" class="muted"></p>
+    <p id="info-address" data-testid="info-address" class="address"></p>
+    <p id="info-texte" data-testid="info-texte" class="texte"></p>
+    <a id="info-link" data-testid="info-link" class="cta" target="_blank" rel="noopener noreferrer">En savoir plus</a>
+    <p id="info-nolink" data-testid="info-nolink" class="muted" hidden>Pas de page trouvée</p>
+  </section>
+
+  <!-- MarkerClusterer v2.5.3 (version figée), expose le global markerClusterer.MarkerClusterer -->
+  <script src="https://unpkg.com/@googlemaps/markerclusterer@2.5.3/dist/index.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

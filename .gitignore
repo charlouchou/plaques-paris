@@ -1,0 +1,5 @@
+node_modules/
+.chef/
+tests/test-results/
+tests/playwright-report/
+.DS_Store
